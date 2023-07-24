@@ -1,0 +1,416 @@
+@import url(./responsive.css);
+
+:root {
+  --text-color-white: #ffffff;
+  --text-color-black: #000000;
+  --dirt: #7f4d2e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #56cdf0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  text-align: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+  color: var(--text-color-black);
+}
+
+header .navigation ul {
+  display: flex;
+  align-items: center;
+}
+
+header .navigation ul li {
+  list-style: none;
+  margin-left: 10px !important;
+}
+
+header .navigation ul li a {
+  text-decoration: none;
+  color: var(--main-color-1);
+  padding-left: 8px;
+  font-weight: 500;
+  margin-right: 5px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+header .navigation ul li a:hover {
+  text-decoration: underline;
+  transition: 0.2s ease-in;
+}
+
+.navigation ul li .active {
+  text-decoration: underline;
+}
+
+.header-name {
+  font-family: 'Press Start 2P', sans-serif;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 20px;
+  align-items: center;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 0.75px black;
+  text-shadow: 0px 1px 0 #000, 0px 2px 0 #000;
+}
+
+#silat-page header .navigation ul li a,
+#esports-page header .navigation ul li a,
+#bulutangkis-page header .navigation ul li a,
+#angkatbesi-page header .navigation ul li a {
+  color: #ffffff;
+}
+
+header .nav-btn {
+  padding: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--main-color-1);
+  display: none;
+}
+
+.footer {
+  font-family: 'Roboto Mono', sans-serif;
+  padding: 75px 100px;
+  color: var(--text-color-white);
+  background-color: var(--dirt);
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.footer-top_desc {
+  text-align: left;
+  width: 65%;
+}
+
+.footer-top_desc h4 {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 16px;
+  -webkit-text-stroke: 0.4px black;
+  text-shadow: 0px 1px 0 #000, 0px 2px 0 #000;
+}
+
+.footer-top_desc p {
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+.footer-top_category {
+  display: flex;
+  width: 15%;
+}
+
+.footer-top_category-sub p,
+.footer-top_category-sub li {
+  text-align: center;
+}
+
+.footer-top_category-sub p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-top_category-sub ul {
+  list-style: none;
+}
+
+.footer-top_category-sub ul li {
+  margin-top: 15px;
+}
+
+.footer-top_category-sub ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-top_category-sub ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+}
+
+.footer-bottom_list ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-bottom_list ul li {
+  margin-right: 40px !important;
+}
+
+.home {
+  text-align: center;
+}
+
+.home-container {
+  margin: auto 0;
+  text-align: center;
+}
+
+.home-slogan {
+  font-size: 46px;
+  line-height: 65px;
+  font-family: 'Press Start 2P', sans-serif;
+  background: linear-gradient(to bottom, #ffb800, #ffd700, #fff500);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-stroke: 0.75px black;
+}
+
+.home-slogan span {
+  background: linear-gradient(to bottom, #ff0000, #ffffff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: none;
+}
+
+.home-text {
+  margin: 70px 0;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.home-container a {
+  color: transparent;
+  font-family: 'Press Start 2P', sans-serif;
+  padding: 20px;
+  cursor: pointer;
+  background-image: url(/src/assets/home-button/button-mulai-jelajah.png);
+  background-size: cover;
+  z-index: 5;
+}
+
+.home-container a:hover {
+  background-image: url(/src/assets/home-button/button-mulai-jelajah-hover.png);
+  transition: 0.2s ease-in;
+}
+
+.data-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.home .footer {
+  margin-top: 230px;
+}
+
+.reference-container {
+  padding: 30px 0;
+  margin: 10px 0;
+}
+
+.reference-container h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 38px;
+  margin: 10px 0 60px 0;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 4px 0 #000, 3px 3px 0 #000;
+  text-align: center;
+}
+
+.reference-list-container {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 25px 50px;
+}
+
+.reference-list-container ul li {
+  margin-top: 25px;
+}
+
+.reference-list-container ul li a {
+  color: #000;
+}
+
+.reference-tanah-container {
+  display: flex;
+}
+
+.reference-tanah-container img {
+  width: 100%;
+  aspect-ratio: 13;
+}
+
+/* ====================================================== */
+/* ====================================================== */
+
+.reference-page,
+.aboutus-page {
+  margin-bottom: -1px;
+}
+
+.aboutus-container {
+  padding: 30px 0;
+  margin: 10px 0;
+}
+
+.aboutus-container h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 38px;
+  margin: 10px 0 60px 0;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 4px 0 #000, 3px 3px 0 #000;
+  text-align: center;
+}
+
+.aboutus-developer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  padding: 40px;
+}
+
+.aboutus-developer img {
+  width: 100%;
+}
+
+.aboutus-developer-identity {
+  padding: 30px;
+  text-align: center;
+}
+
+.aboutus-developer-identity h4 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 4px 0 #000, 3px 3px 0 #000;
+  text-align: center;
+}
+
+.aboutus-developer-identity p {
+  margin: 30px 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.aboutus-developer-identity a {
+  text-decoration: none;
+  color: var(--text-color-black);
+  font-weight: 600;
+  font-family: 'Roboto Mono', monospace;
+  padding: 10px 30px;
+  background-color: #f3a229;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 0 black;
+  cursor: pointer;
+}
+
+.aboutus-tanah-container {
+  display: flex;
+}
+
+.aboutus-tanah-container img {
+  width: 100%;
+  aspect-ratio: 13;
+}
+
+/* ====================================================== */
+/* ===================== RESPONSIVE ===================== */
+/* ====================================================== */
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 25px 35px;
+  }
+
+  header .nav-btn {
+    display: block;
+    color: #000;
+  }
+
+  #silat-page header nav ul li,
+  #esports-page header nav ul li,
+  #bulutangkis-page header nav ul li,
+  #angkatbesi-page header nav ul li {
+    color: #000;
+  }
+
+  #silat-page header .nav-btn,
+  #esports-page header .nav-btn,
+  #bulutangkis-page header .nav-btn,
+  #angkatbesi-page header .nav-btn {
+    color: #fff;
+  }
+
+  #silat-page header .nav-close-btn,
+  #esports-page header .nav-close-btn,
+  #bulutangkis-page header .nav-close-btn,
+  #angkatbesi-page header .nav-close-btn {
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    padding: 25px 20px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .reference-container {
+    padding: 20px 0;
+    margin: 10px 0;
+  }
+
+  .reference-container h3 {
+    font-size: 30px;
+    margin: 10px 0 0px 0;
+  }
+
+  .reference-list-container {
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .reference-list-container ul li {
+    margin-top: 25px;
+  }
+}

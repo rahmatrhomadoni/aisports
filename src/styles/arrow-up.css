@@ -1,0 +1,21 @@
+.back-to-top > a {
+  margin-left: 7em;
+}
+
+.back-to-top > a > img {
+  position: relative;
+  margin-bottom: 0;
+  bottom: -10px;
+}
+
+@media screen and (max-width: 834px) {
+  .back-to-top > a > img {
+    width: 15em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .back-to-top > a > img {
+    width: 12em;
+  }
+}

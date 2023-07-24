@@ -1,0 +1,85 @@
+.background-awan-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  right: 0;
+  top: 0em;
+  z-index: -1;
+}
+
+.bg-awan1,
+.bg-awan2,
+.bg-awan3 {
+  position: absolute;
+  width: 100%;
+  left: -10%;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.bg-awan1 {
+  top: 120px;
+  animation: slideLeftAwan 20s linear infinite;
+  z-index: 8;
+}
+
+.bg-awan2 {
+  top: 309px;
+  animation: slideLeftAwan 30s linear infinite;
+  z-index: 1;
+  margin-top: 25px;
+}
+
+.bg-awan3 {
+  top: 569px;
+  animation: slideLeftAwan 40s linear infinite;
+  margin-top: 45px;
+}
+
+.img-awan1,
+.img-awan2,
+.img-awan3 {
+  width: 200px;
+}
+
+@keyframes slideLeftAwan {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(112%);
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .background-awan-container {
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .background-awan-container {
+    top: -30px;
+  }
+
+  .bg-awan1 {
+    animation: slideLeftAwan 10s linear infinite;
+  }
+
+  .bg-awan2 {
+    top: 220px;
+    animation: slideLeftAwan 20s linear infinite;
+  }
+
+  .bg-awan3 {
+    top: 420px;
+    animation: slideLeftAwan 30s linear infinite;
+  }
+
+  .img-awan1,
+  .img-awan2,
+  .img-awan3 {
+    width: 130px;
+  }
+}

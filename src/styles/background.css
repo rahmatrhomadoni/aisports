@@ -1,0 +1,424 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: 0;
+  z-index: -2;
+}
+
+.background-bangunan-container {
+  z-index: -5;
+}
+
+.bg-bangunan-1 {
+  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  z-index: -4;
+}
+
+.bg-bangunan-2 {
+  animation: slideTop 10s linear infinite;
+  width: fit-content;
+  margin: auto;
+  bottom: 0;
+}
+
+.background-tanaman-container {
+  display: flex;
+  justify-content: space-between;
+  width: 105%;
+}
+
+.tanaman-1 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bendera {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  z-index: -2;
+}
+
+.bg-tanaman-1,
+.bg-tanaman-2 {
+  width: 16em;
+  z-index: -1;
+}
+
+.bg-tanaman-1 {
+  position: absolute;
+  left: -60px;
+  bottom: 97px;
+}
+
+.bg-tanaman-2 {
+  position: absolute;
+  bottom: 99px;
+  right: -60px;
+}
+
+.bg-football,
+.bg-taekwondo,
+.bg-angkatbesi,
+.bg-pebulutangkis,
+.bg-caturKuda,
+.bg-caturMenteri {
+  position: absolute;
+}
+
+.bg-football {
+  z-index: 10;
+  left: 20%;
+  transform: translateX(-20%);
+  bottom: 100px;
+}
+
+.bg-taekwondo {
+  left: 40%;
+  bottom: 130px;
+  transform: translateX(-40%);
+  z-index: -4;
+  width: 9em;
+}
+
+.bg-angkatbesi {
+  z-index: 10;
+  left: 60%;
+  bottom: 100px;
+  transform: translateX(-60%);
+}
+
+.bg-pebulutangkis {
+  left: 75%;
+  bottom: 90px;
+  transform: translateX(-75%);
+  z-index: -4;
+}
+
+.bg-caturKuda {
+  left: 85%;
+  bottom: 100px;
+  transform: translateX(-85%);
+  z-index: -4;
+}
+
+.bg-caturMenteri {
+  z-index: 10;
+  left: 88%;
+  bottom: 100px;
+  transform: translateX(-88%);
+}
+
+.bg-rumput {
+  position: absolute;
+  margin: auto;
+  bottom: 98px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 90px;
+  z-index: -3;
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(150%);
+  }
+  45% {
+    transform: translateY(30%);
+  }
+  55% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(150%);
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .home-container {
+    position: relative;
+    top: 115px;
+  }
+
+  .background-bangunan-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  @keyframes slideTop {
+    0% {
+      transform: translateY(150%);
+    }
+    45% {
+      transform: translateY(50%);
+    }
+    55% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(150%);
+    }
+  }
+
+  .home-container {
+    position: relative;
+    top: 170px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .bg-caturKuda {
+    display: none;
+  }
+  .bg-caturMenteri {
+    max-width: 60px;
+  }
+  .bg-angkatbesi {
+    max-width: 130px;
+    left: 56%;
+  }
+
+  .bg-football,
+  .bg-taekwondo,
+  .bg-pebulutangkis {
+    max-width: 100px;
+  }
+
+  .bg-taekwondo {
+    left: 37%;
+  }
+
+  .bendera {
+    max-width: 150px;
+  }
+
+  .home-container {
+    top: 100px;
+  }
+
+  .bendera {
+    left: 50px;
+    width: 100px;
+    height: 400px;
+  }
+
+  .bg-tanaman-1,
+  .bg-tanaman-2 {
+    width: 12em;
+  }
+
+  .bg-tanaman-1 {
+    position: relative;
+    left: -90px;
+    bottom: -1.5px;
+  }
+
+  .bg-tanaman-2 {
+    right: -90px;
+  }
+
+  .bg-rumput {
+    width: 80%;
+    height: 60px;
+  }
+
+  @keyframes slideTop {
+    0% {
+      transform: translateY(150%);
+    }
+    45% {
+      transform: translateY(50%);
+    }
+    55% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(150%);
+    }
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .bg-football,
+  .bg-taekwondo,
+  .bg-angkatbesi,
+  .bg-pebulutangkis,
+  .bg-caturKuda,
+  .bg-caturMenteri,
+  .bendera {
+    display: none;
+  }
+
+  .bg-rumput {
+    width: 150%;
+    height: 80px;
+  }
+
+  .home-container > h3 {
+    font-size: 35px;
+    line-height: 45px;
+    margin: 0 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .home-container {
+    position: relative;
+    top: 70px;
+  }
+
+  .home-container > h3 {
+    font-size: 26px;
+    line-height: 45px;
+    margin: 0 10px;
+  }
+
+  .home-container > p {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 26px;
+  }
+
+  .home .home-container a {
+    background-size: 12em;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .bg-tanaman-1,
+  .bg-tanaman-2 {
+    width: 12em;
+  }
+
+  .bg-tanaman-1 {
+    position: relative;
+    left: -90px;
+    bottom: 0;
+  }
+
+  .bg-tanaman-2 {
+    right: -90px;
+  }
+
+  .bg-rumput {
+    width: 200%;
+    height: 70px;
+  }
+
+  @keyframes slideTop {
+    0% {
+      transform: translateY(150%);
+    }
+    45% {
+      transform: translateY(70%);
+    }
+    55% {
+      transform: translateY(70%);
+    }
+    100% {
+      transform: translateY(150%);
+    }
+  }
+}
+
+@media (max-width: 278px) {
+  .home-container > h3 {
+    font-size: 22px;
+    line-height: 40px;
+    margin: 0 10px;
+  }
+
+  .home-container > p {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 22px;
+  }
+
+  .bg-tanaman-1,
+  .bg-tanaman-2 {
+    width: 12em;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .home-container {
+    position: absolute;
+    top: 8em;
+    width: 100%;
+  }
+
+  .bg-football,
+  .bg-taekwondo,
+  .bg-pebulutangkis {
+    max-width: 100px;
+  }
+
+  .bg-caturKuda {
+    display: none;
+  }
+  .bg-caturMenteri {
+    max-width: 60px;
+  }
+  .bg-angkatbesi {
+    max-width: 130px;
+    left: 56%;
+  }
+
+  .bg-rumput {
+    width: 100%;
+    height: 70px;
+  }
+
+  .home-container > h3 {
+    font-size: 35px;
+    line-height: 45px;
+    margin: 0 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .home-container {
+    position: absolute;
+    top: 6em;
+    width: 100%;
+  }
+
+  .bg-football,
+  .bg-taekwondo,
+  .bg-angkatbesi,
+  .bg-pebulutangkis,
+  .bg-caturKuda,
+  .bg-caturMenteri,
+  .bendera {
+    display: none;
+  }
+}

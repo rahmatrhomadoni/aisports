@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+  header .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: 0.75s;
+    transform: translateY(-100vh);
+    z-index: 2;
+  }
+
+  header .navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  header .navigation ul li {
+    margin: 0 !important;
+    font-size: 24px;
+  }
+
+  header .navigation ul li a {
+    padding: 0;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+
+  .type-writer-wrapper {
+    width: 22em;
+  }
+
+  .type-writer {
+    font-size: 12px;
+  }
+
+  #silat-page header .navigation ul li a,
+  #esports-page header .navigation ul li a,
+  #bulutangkis-page header .navigation ul li a,
+  #angkatbesi-page header .navigation ul li a {
+    color: #000000;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .footer {
+    padding: 40px 60px;
+  }
+
+  .footer-top_desc h4,
+  .footer-top_desc p,
+  .footer-top_category-sub ul li a,
+  .footer-bottom p,
+  .footer-bottom_list ul li {
+    font-size: 14px;
+  }
+
+  .footer-top_category-sub p {
+    font-size: 16px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    gap: 50px;
+  }
+
+  .footer-top_desc {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-top_category {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .footer {
+    padding: 40px 40px;
+  }
+}

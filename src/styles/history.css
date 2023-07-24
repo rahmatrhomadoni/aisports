@@ -1,0 +1,399 @@
+.sport-container {
+  overflow: hidden;
+  margin-bottom: -1px;
+}
+
+.sport-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 75em;
+  margin-bottom: 45em;
+}
+
+.sport-content-1 {
+  width: 80%;
+}
+
+.sport-data,
+.sport-data-football {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 1.5rem;
+  margin-bottom: 0;
+  height: 23.8em;
+}
+
+.sport-content-1 .sport-data-football:nth-child(3) {
+  height: 34em;
+}
+
+.sport-content-1 .sport-data-football:nth-child(3) .sport-line img {
+  height: 34em;
+}
+
+.sport-content-1 .sport-data-football:last-child {
+  margin-bottom: 25em;
+}
+
+.gambar-kiri {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+}
+
+.sport-rounder {
+  width: 55px;
+  height: 55px;
+}
+
+.sport-line,
+.sport-line-catur {
+  margin: auto;
+  width: 20px;
+  margin-top: 0;
+}
+
+.sport-line > img {
+  z-index: -5;
+}
+
+.data-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.data-item-sm {
+  display: none;
+  text-align: center;
+}
+
+.data-item-content {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+}
+
+.sport-title {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.sport-subtitle {
+  margin-bottom: 0.25rem;
+  color: #000;
+  font-family: 'Silkscreen', cursive;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -3.75px;
+}
+
+.lambang-wrapper {
+  height: 96%;
+}
+
+.sport-data:last-child .gambar-kiri,
+.sport-data-football:last-child .gambar-kiri {
+  visibility: hidden;
+}
+
+.sport-data:last-child,
+.sport-data-football:last-child {
+  margin-bottom: 8em;
+}
+
+/* silat */
+.bg-silat,
+.bg-catur,
+.bg-esport,
+.bg-lifting {
+  position: fixed;
+  z-index: -5;
+  width: 100%;
+  height: 100vh;
+}
+
+.sport-medal {
+  width: 55px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+}
+
+.sport-content-1 .sport-data-silat {
+  height: 34em;
+  position: relative;
+}
+
+.lambang-wrapper-silat > .sport-line > img {
+  height: 34em;
+}
+
+.sport-content-1 .sport-data-silat:nth-child(7) .data-item {
+  margin-top: 30px;
+}
+
+.sport-content-1 .sport-data-silat:last-child {
+  margin-bottom: 25em;
+}
+
+.sport-content-1 .sport-data-esport:last-child {
+  margin-bottom: 30em;
+}
+
+.sport-content-1 .sport-data-badminton:last-child {
+  margin-bottom: 30em;
+}
+
+.sport-content-1 .sport-data-lifting:last-child {
+  margin-bottom: 30em;
+}
+
+/* catur */
+.sport-catur {
+  height: 98px;
+  position: relative;
+}
+
+/* game */
+.sport-game {
+  height: 47px;
+  position: relative;
+}
+
+/* Badminton */
+.sport-badminton,
+.sport-lifting {
+  height: 45px;
+  position: relative;
+}
+
+.sport-content-1 .sport-data-catur:last-child {
+  margin-bottom: 35em;
+}
+
+@media screen and (max-width: 1024px) {
+  .sport-subtitle {
+    font-size: 20px;
+    letter-spacing: -2.9px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .sport-content-1 {
+    margin-bottom: 0em;
+    width: 90%;
+  }
+
+  .data-item {
+    display: none;
+  }
+
+  .data-item-sm {
+    width: 30em;
+    display: block;
+  }
+
+  .sport-subtitle {
+    letter-spacing: -3px;
+  }
+
+  .gambar-kiri {
+    display: none;
+  }
+
+  .sport-line > img {
+    height: 18em;
+  }
+
+  .sport-data,
+  .sport-data-football {
+    height: 18em;
+  }
+
+  .sport-content-1 .sport-data-football:nth-child(3) {
+    height: 23em;
+  }
+
+  .sport-content-1 .sport-data-football:nth-child(3) .sport-line img {
+    height: 23em;
+  }
+
+  .sport-content-1 .sport-data-silat {
+    height: 25em;
+    position: relative;
+  }
+
+  .sport-content-1 .sport-data-catur:last-child {
+    margin-bottom: 35em;
+  }
+
+  .lambang-wrapper-silat > .sport-line > img {
+    height: 25em;
+  }
+
+  .simbol-wrapper {
+    width: 55px;
+  }
+
+  .lambang-wrapper {
+    width: 55px;
+  }
+
+  /* catur */
+  .simbol-wrapper-catur,
+  .lambang-wrapper-catur {
+    width: 50px;
+  }
+
+  .sport-line-catur > img {
+    height: 18em;
+  }
+
+  /* Badminton */
+  .lambang-wrapper-badminton {
+    width: 70px;
+  }
+
+  /* Esport */
+  .lambang-wrapper-esport {
+    width: 70px;
+  }
+
+  /* Silat */
+  .lambang-wrapper-silat {
+    width: 55px;
+  }
+
+  .data-item-sm-badminton {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .data-item-sm {
+    width: 22em;
+  }
+
+  .sport-subtitle {
+    font-size: 18px;
+  }
+
+  .lambang-wrapper,
+  .simbol-wrapper,
+  .lambang-wrapper-catur,
+  .simbol-wrapper-catur {
+    width: 30px;
+  }
+
+  .sport-line,
+  .sport-line > img,
+  .sport-line-catur,
+  .sport-line-catur > img {
+    width: 10px;
+  }
+  .lambang-wrapper-silat {
+    width: 35px;
+  }
+
+  .sport-catur {
+    height: 55px;
+  }
+
+  .sport-rounder {
+    height: 29px;
+  }
+
+  .sport-lifting {
+    height: 30px;
+  }
+
+  .sport-medal {
+    height: 29px;
+  }
+
+  .sport-medal > img {
+    width: 35px;
+  }
+
+  .sport-lifting > img,
+  .sport-rounder > img,
+  .sport-catur > img {
+    width: 30px;
+  }
+
+  img .sport-content-1 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .sport-section {
+    top: 60em;
+    margin-bottom: 28em;
+  }
+
+  .sport-content-1 {
+    margin-bottom: 5em;
+  }
+
+  .data-item-sm {
+    width: 18em;
+  }
+
+  .sport-subtitle {
+    font-size: 17px;
+    letter-spacing: -2.5px;
+  }
+
+  .sport-data:last-child,
+  .sport-data-football:last-child {
+    margin-bottom: 3em;
+  }
+
+  .sport-content-1 {
+    width: 97%;
+  }
+
+  .data-item-sm-badminton {
+    margin-right: 10px;
+  }
+
+  .sport-data {
+    gap: 1rem;
+  }
+
+  .sport-content-1 .sport-data-esport:nth-child(5) {
+    height: 21em;
+  }
+
+  .sport-content-1 .sport-data-esport:nth-child(5) .sport-line img {
+    height: 21em;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  .sport-section {
+    top: 95em;
+    margin-bottom: 65em;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .sport-section {
+    top: 45em;
+    margin-bottom: 15em;
+  }
+}

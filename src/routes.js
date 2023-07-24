@@ -1,0 +1,11 @@
+export const rootPath = '/';
+export const homePath = '/beranda';
+export const sportsPath = '/olahraga';
+export const referencePath = '/referensi';
+export const aboutUsPath = '/tentang-kami';
+export const soccerPath = '/olahraga/sepak-bola';
+export const silatPath = '/olahraga/silat';
+export const chessPath = '/olahraga/catur';
+export const eSportsPath = '/olahraga/e-sports';
+export const badmintonPath = '/olahraga/badminton';
+export const weightLiftingPath = '/olahraga/angkat-beban';

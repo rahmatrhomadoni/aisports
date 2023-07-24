@@ -1,0 +1,127 @@
+.sports-container {
+  font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sports-tanah {
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#sports-rumput {
+  width: 100%;
+  position: relative;
+  bottom: -10px;
+}
+
+.sports-container h3 {
+  font-size: 38px;
+  margin: 25px 0 50px 0;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 4px 0 #000, 3px 3px 0 #000;
+}
+
+.sports-type-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 5em;
+  padding: 0 50px;
+}
+
+.sports-type-container a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.sports-type-container a:hover {
+  box-shadow: 0px 4px 8px 0px rgb(75, 75, 75);
+  animation: 1s ease-in-out;
+}
+
+.sports-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  justify-self: center;
+  width: 20em;
+}
+
+.sports-card p {
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.sports-card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .sports-type-container {
+    width: 90%;
+    gap: 3em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sports-card {
+    width: 14em;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .sports-card {
+    width: 10em;
+  }
+
+  .sports-container h3 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .sports-card {
+    width: 11em;
+  }
+
+  .sports-card p {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .sports-type-container {
+    width: 95%;
+    gap: 2em;
+  }
+  .sports-card {
+    width: 8em;
+  }
+
+  .sports-card p {
+    font-size: 10px;
+    padding: 7px 0;
+  }
+
+  .sports-tanah {
+    height: 100px;
+  }
+
+  .sports-container h3 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}

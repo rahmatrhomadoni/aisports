@@ -1,0 +1,260 @@
+@keyframes anchorBackground {
+  from {
+    background-color: #ffaf95;
+  }
+  to {
+    background-color: #d6ffb5;
+  }
+}
+
+.soccer #soccer-rumput {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 170px;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ====================================================== */
+/* ====================================================== */
+
+#sport-history header nav ul li {
+  color: #fff;
+}
+
+.sport-history {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+}
+
+.batu-sport-tanah {
+  height: 150px;
+}
+
+.sport {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  top: -100px;
+  overflow: hidden;
+}
+
+.sport-component {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 10em;
+  bottom: 200px;
+  position: absolute;
+  bottom: 150px;
+}
+
+.sport h3 {
+  font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+  font-size: 38px;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 4px 0 #000, 3px 3px 0 #000;
+}
+
+.batu-sport {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 150px;
+}
+
+.type-writer-wrapper {
+  background-image: url(/src/assets/pixel-speech-bubble.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Silkscreen', cursive;
+  text-align: center;
+  margin: auto;
+  width: 30rem;
+  height: 7.5em;
+  padding: 20px;
+}
+
+.sport-character-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  z-index: 10;
+  height: 10em;
+}
+
+.sport-character-button > .sport-character-silat {
+  width: 11em;
+}
+
+.sport-character-button > .sport-character-esports {
+  width: 15em;
+  height: 10em;
+}
+
+.sport-character-button > .sport-character-catur {
+  width: 8em;
+}
+
+.sport-character-button > a {
+  font-family: 'Press Start 2P', cursive;
+  padding: 20px 35px;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  animation-name: anchorBackground;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  border: 3px solid green;
+}
+
+.sport-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+.sport-background > img {
+  width: 100%;
+  height: 100vh;
+}
+
+.sport #sport-background-id {
+  width: 100%;
+  position: absolute;
+  z-index: -3;
+}
+
+.silat-obor-container .obor {
+  z-index: 100;
+  width: 3rem;
+}
+
+.silat-obor-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.silat-obor-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+
+.type-writer {
+  font-size: 20px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 678px) {
+  .type-writer-wrapper {
+    width: 22rem;
+    height: 6em;
+    padding: 5px;
+  }
+
+  .type-writer {
+    font-size: 15px;
+  }
+
+  .sport h3 {
+    font-size: 30px;
+    line-height: 1.5em;
+  }
+
+  .sport-character-button {
+    gap: 5em;
+    z-index: 10;
+    height: 7em;
+  }
+
+  .sport-character-button > .sport-character-silat {
+    width: 8em;
+  }
+
+  .sport-character-button > .sport-character-soccer {
+    width: 6em;
+  }
+
+  .sport-character-button > .sport-character-esports {
+    width: 8em;
+    height: 7em;
+  }
+
+  .sport-character-button > .sport-character-catur {
+    width: 5.5em;
+  }
+
+  .sport-character-button > .sport-character-lifter {
+    width: 9em;
+  }
+
+  .sport-character-button > a {
+    padding: 10px 17px;
+    border: 3px solid green;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .type-writer-wrapper {
+    width: 20rem;
+    height: 5.5em;
+    padding: 5px;
+  }
+
+  .sport-component {
+    gap: 5em;
+  }
+
+  .type-writer {
+    font-size: 13px;
+  }
+
+  .sport h3 {
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+
+  .sport-character-button {
+    gap: 3em;
+    z-index: 10;
+    height: 7em;
+  }
+
+  .sport-character-button > a {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .silat-obor-container .obor {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .sport-component {
+    gap: 2em;
+  }
+}
